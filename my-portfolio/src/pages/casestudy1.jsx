@@ -1,6 +1,6 @@
 export default function Case_study1() {
   return (
-    <div className="p-10">
+    <div className="pt-2 pl-[130px] pr-[130px] pt-[6.75rem]">
       <h1 className="text-3xl font-heading mb-6">Case Studies</h1>
       <p className="text-lg">Here’s a look at my featured projects.</p>
       {/* Later: Add project cards or links here */}
