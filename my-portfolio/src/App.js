@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar.jsx';
 import Footer from './components/footer.jsx';
 
@@ -17,13 +17,15 @@ function App() {
       <div className="flex flex-col min-h-screen bg-background text-neutral">
         <Navbar />
         <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/casestudy1" element={<CaseStudy1 />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/style-guide" element={<StyleGuide />} />
-          </Routes>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/casestudy1" element={<CaseStudy1 />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/style-guide" element={<StyleGuide />} />
+            </Routes>
+          </Router>
         </main>
         <Footer />
       </div>

@@ -22,6 +22,7 @@ export default function Navbar() {
         <Link to="/about" className={linkStyle('/about')}>About</Link>
         <Link to="/case-studies" className={linkStyle('/case-studies')}>Case Studies</Link>
         <Link to="/contact" className={linkStyle('/contact')}>Contact</Link>
+        <Link to="/style-guide" className={linkStyle('/style-guide')}>Style Guide</Link>
       </div>
     </nav>
   );
