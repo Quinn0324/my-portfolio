@@ -29,6 +29,7 @@ module.exports = {
       sm: ['1.2rem', { lineHeight: '1.25rem' }],
       base: ['1.72813rem', { lineHeight: '1.5rem' }],
       lg: ['2.07375rem', { lineHeight: '1.75rem' }],
+      lgg: ['2.98625rem', { lineHeight: '1.75rem' }],
       xl: ['8.5rem', { lineHeight: '1.75rem' }],
       '2xl': ['1.5rem', { lineHeight: '2rem' }],
       '3xl': ['1.875rem', { lineHeight: '2.25rem' }],

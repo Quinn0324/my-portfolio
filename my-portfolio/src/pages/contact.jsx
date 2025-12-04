@@ -1,4 +1,4 @@
-import Image from "../images/contact.webp";
+import Image from "../images/contact/contact.webp";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 
@@ -103,7 +103,12 @@ function sendEmail(e) {
 
         {/* BUTTON */}
         <button type="submit" className=" min-w-screen w-full bg-primary text-sm text-background font-sans font-semibold pt-[0.9375rem] pb-[0.9375rem] px-[1.5625rem] rounded-md 
-          hover:bg-background border-2 border-primary hover:text-primary
+
+          hover:bg-background 
+          hover:border-2 
+          hover:border-primary 
+          hover:text-primary
+
           focus:outline-2 focus:outline-offset-2 focus:outline-primary-500 
           active:bg-primary-700">
           Contact Me

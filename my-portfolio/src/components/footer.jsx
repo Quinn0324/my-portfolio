@@ -3,9 +3,9 @@ import arrowUp from "../icons/arrowUp.svg";
 
 export default function Footer() {
     return(
-        <div className="px-8 py-4 flex flex-row justify-between items-center">
+        <div className="h-[15rem] px-8 flex flex-row justify-between items-center">
 
-            <img src={logoPrimary} alt="Logo" className="h-[15rem] w-auto"/>
+            <img src={logoPrimary} alt="Logo" className="h-[15rem] w-[15rem] object-cover"/>
 
             <div className="flex flex-row justify-center items-center gap-20 ">
 
