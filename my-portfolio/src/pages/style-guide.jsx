@@ -1,5 +1,6 @@
 import Button from "../components/button-primary";
 import Button1 from "../components/button-secondary";
+import Phone1 from "../components/phone1.jsx";
 
 
 export default function Style_Guide() {
@@ -33,7 +34,7 @@ export default function Style_Guide() {
       </div>
       
 
-    
+    <Phone1 />
 
 
       

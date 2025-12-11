@@ -4,7 +4,7 @@ import Footer from './components/footer.jsx';
 
 import Home from './pages/home';
 import About from './pages/about';
-import CaseStudy1 from './pages/casestudy1';
+import MyWork from './pages/mywork';
 import Contact from './pages/contact';
 import StyleGuide from './pages/style-guide';
 
@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/casestudy1" element={<CaseStudy1 />} />
+            <Route path="/mywork" element={<MyWork />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/style-guide" element={<StyleGuide />} />
           </Routes>

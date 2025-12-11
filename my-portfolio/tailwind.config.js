@@ -40,6 +40,13 @@ module.exports = {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
     },
+    lineHeight: {
+        extraTight: "0.8",
+        tighter2: "0.9",
+        snug2: "1.1",
+        loose2: "1.75",
+        loose1: "10",
+      },
     },
   },
   plugins: [],
