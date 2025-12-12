@@ -72,11 +72,11 @@ useEffect(() => {
   <section className="relative flex flex-col lg:flex-row items-center justify-center px-4 sm:px-8 lg:px-40 py-12 sm:py-20 lg:pt-20 gap-6 sm:gap-8 lg:gap-0 min-h-screen lg:min-h-[85vh] bg-[#080706]" aria-label="The person - personal interests and hobbies">
     
     {/* OVERLAPPING LABEL - THE PERSON */}
-    <h3 className="opacity-0 translate-x-10 transition-all duration-1000 scroll-fade-right absolute right-[10%] top-[-2%] sm:-top-[3%] lg:-top-[10%] uppercase font-[100] text-[#FFFAF0] text-5xl sm:text-7xl lg:text-9xl tracking-wide">
+    <h3 className="opacity-0 translate-x-10 transition-all duration-1000 scroll-fade-right absolute right-[13%] md:right-[10%] top-[-2%] sm:-top-[3%] lg:-top-[10%] uppercase font-[100] text-[#FFFAF0] text-5xl sm:text-7xl lg:text-9xl tracking-wide">
       The Person
     </h3>
 
-    <div className="lg:pr-10">
+    <div className="lg:pr-10 pt-10">
       <p className="text-lgg pb-5">More Me</p>
       <p className="text-[#FFFAF0] text-sm sm:text-base lg:text-base font-[100] leading-snug sm:leading-normal lg:leading-relaxed">
         I'm a big bouldering fan, it keeps me problem-solving and pushing limits, which is probably why I love tackling tricky design challenges too.

@@ -84,7 +84,7 @@ export default function Home() {
             <p className="text-[#FFFAF0] text-sm sm:text-base lg:text-base font-[100] leading-snug sm:leading-normal lg:leading-relaxed">
               I’m Preston Quinn, a UX/UI and web designer focused on creating digital experiences that are simple, intuitive, and engaging. I design interfaces that are minimal, accessible, and user-centered while reflecting personality and purpose. My work balances usability with creativity, helping brands and startups connect with their audiences effectively.
             </p>
-            <div className="pt-8 flex justify-center">
+            <div className="pt-8 ">
                 <button onClick={handleNavigateToAbout} className="bg-primary text-sm text-background font-sans font-semibold pt-[0.9375rem] pb-[0.9375rem] pr-[1.5625rem] pl-[1.5625rem] rounded-md 
                 hover:bg-background border-2 border-primary
                 hover:text-primary

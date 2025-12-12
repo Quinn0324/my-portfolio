@@ -13,222 +13,214 @@ import casestudy12 from "../images/Case Study Page/Case Study 1/case-study-(13).
 import casestudy13 from "../images/Case Study Page/Case Study 1/case-study-(14).webp";  
 import casestudy14 from "../images/Case Study Page/Case Study 1/case-study-(15).webp"; 
 import casestudy15 from "../images/Case Study Page/Case Study 1/case-study-(16).webp"; 
+import { Link } from "react-router-dom"; 
 
 
 
 
-export default function StepsThroughout() {
+
+export default function CaseStudy1() {
   return (
-    <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-25 px-4 sm:px-8 lg:px-40 py-8 sm:py-12 lg:py-16 overflow-auto">
-      <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-[35px] w-full">
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 sm:gap-6 lg:gap-[30px] w-full">
-          <div className="flex flex-col items-start w-full">
-            <p className="text-[#FFF] font-outfit text-lg sm:text-3xl lg:text-[47.78px] font-light leading-tight sm:leading-snug lg:leading-[1.2em] w-full">
-              Introduction
-            </p>
-            <p className="text-[#FFF] font-outfit text-sm sm:text-base lg:text-[27.65px] font-normal leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
-              A School Project to create a original app concept, so I came up
-              with and designed a app to make fitness more engaging through
-              RPG-style progression. Gym Leveling transforms workouts into a
-              gamified experience, where users track progress, earn XP, and
-              level up their fitness journey.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col lg:flex-row lg:justify-end items-start lg:items-center gap-4 sm:gap-6 lg:gap-[30px] w-full">
-          <div className="flex flex-col justify-start lg:justify-center items-start lg:items-end w-full">
-            <p className="text-[#FFF] font-outfit text-lg sm:text-3xl lg:text-[47.78px] font-light leading-tight sm:leading-snug lg:leading-[1.2em] w-full">
-              The Challenge
-            </p>
-            <p className="text-[#FFF] font-outfit text-sm sm:text-base lg:text-[27.65px] font-normal leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
-              Most fitness apps only log data, leaving users unmotivated and
-              inconsistent. Many rely on multiple platforms for tracking,
-              challenges, and community resulting in a fragmented experience.
-              The challenge was to design an app that centralizes fitness
-              tracking while making it immersive, fun, and motivating.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-25 w-full">
-        <p className="text-[#FFF] font-outfit text-lg sm:text-3xl lg:text-[47.78px] font-medium leading-tight sm:leading-snug lg:leading-[1.2em] w-full">
-          My Process
-        </p>
-        <div className="flex flex-col justify-start gap-4 sm:gap-5 w-full">
-          <p className="text-[#FFF] font-outfit text-base sm:text-xl lg:text-[39.81px] font-medium leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
-            Defined business, user goals, a problem statement &amp; product analysis
+    <>
+      {/* SECTION 1 - INTRODUCTION & CHALLENGE */}
+      <section className="flex flex-col lg:flex-row items-start px-4 sm:px-8 lg:px-0 py-12 sm:py-20 lg:py-12 gap-12 sm:gap-16 lg:gap-20 w-full">
+        <div className="flex flex-col gap-4 w-full">
+          <h2 className="text-[#FFFAF0] text-2xl sm:text-3xl lg:text-lgg pb-5 font-[400] leading-tight">
+            Introduction
+          </h2>
+          <p className="text-[#FFFAF0] text-sm sm:text-base lg:text-base font-[100] leading-snug sm:leading-normal lg:leading-relaxed">
+            A school project to create an original app concept. I designed Gym Leveling, an app that makes fitness more engaging through RPG-style progression. It transforms workouts into a gamified experience where users track progress, earn XP, and level up their fitness journey.
           </p>
+        </div>
+
+        <div className="flex flex-col gap-4 w-full">
+          <h2 className="text-[#FFFAF0] text-2xl sm:text-3xl lg:text-lgg pb-5 font-[400] leading-tight">
+            The Challenge
+          </h2>
+          <p className="text-[#FFFAF0] text-sm sm:text-base lg:text-base font-[100] leading-snug sm:leading-normal lg:leading-relaxed">
+            Most fitness apps only log data, leaving users unmotivated and inconsistent. Many rely on multiple platforms for tracking, challenges, and community, resulting in a fragmented experience. The challenge was to design an app that centralizes fitness tracking while making it immersive, fun, and motivating.
+          </p>
+        </div>
+      </section>
+      {/* SECTION 2 - MY PROCESS */}
+      <section className="flex flex-col items-start px-4 sm:px-8 lg:px-0 py-12 sm:py-20 lg:py-24 gap-12 sm:gap-16 lg:gap-20 w-full">
+        <h2 className="text-[#FFFAF0] text-2xl sm:text-3xl lg:text-lgg pb-5 font-[400] leading-tight">
+          My Process
+        </h2>
+
+        {/* PROCESS STEP 1 */}
+        <div className="flex flex-col gap-3 w-full">
+          <h3 className="text-[#FFFAF0] text-base sm:text-lg font-[400]">
+            Defined business, user goals, a problem statement &amp; product analysis
+          </h3>
           <img
             src={casestudy1}
-            className="w-full h-auto max-w-none"
+            className="w-full sm:w-4/5 lg:w-3/5 h-auto rounded-[10px]"
             alt="Defined business goals and product analysis"
           />
         </div>
-        <div className="flex flex-col justify-start gap-4 sm:gap-5 w-full">
-          <p className="text-[#FFF] font-outfit text-base sm:text-xl lg:text-[39.81px] font-medium leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
+
+        {/* PROCESS STEP 2 */}
+        <div className="flex flex-col gap-3 w-full">
+          <h3 className="text-[#FFFAF0] text-base sm:text-lg font-[400]">
             Researched primary &amp; secondary target markets
-          </p>
+          </h3>
           <img
             src={casestudy2}
-            className="w-full h-auto max-w-none"
+            className="w-full sm:w-4/5 lg:w-3/5 h-auto rounded-[10px]"
             alt="Primary and secondary market research"
           />
         </div>
-        <div className="flex flex-col justify-start gap-4 sm:gap-5 w-full">
-          <p className="text-[#FFF] font-outfit text-base sm:text-xl lg:text-[39.81px] font-medium leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
+
+        {/* PROCESS STEP 3 */}
+        <div className="flex flex-col gap-3 w-full">
+          <h3 className="text-[#FFFAF0] text-base sm:text-lg font-[400]">
             Created personas to reflect core user needs
-          </p>
-          <div className="flex flex-col sm:flex-row items-start gap-2.5 w-full">
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
             <img
               src={casestudy3}
-              className="w-full h-auto max-w-none"
+              className="w-full h-auto rounded-[10px]"
               alt="User persona 1"
             />
             <img
               src={casestudy4}
-              className="w-full h-auto max-w-none"
+              className="w-full h-auto rounded-[10px]"
               alt="User persona 2"
             />
           </div>
         </div>
-        <div className="flex flex-col justify-start gap-4 sm:gap-5 w-full">
-          <p className="text-[#FFF] font-outfit text-base sm:text-xl lg:text-[39.81px] font-medium leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
+
+        {/* PROCESS STEP 4 */}
+        <div className="flex flex-col gap-3 w-full">
+          <h3 className="text-[#FFFAF0] text-base sm:text-lg font-[400]">
             Developed mind maps, mood boards, and ideation exercises
-          </p>
-          <div className="flex flex-col sm:flex-row items-start gap-2.5 w-full">
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
             <img
               src={casestudy5}
-              className="w-full h-auto max-w-none"
+              className="w-full h-auto rounded-[10px]"
               alt="Mind map and ideation"
             />
             <img
               src={casestudy6}
-              className="w-full h-auto max-w-none"
+              className="w-full h-auto rounded-[10px]"
               alt="Mood board"
             />
           </div>
           <img
             src={casestudy7}
-            className="w-full h-auto max-w-none"
+            className="w-full sm:w-4/5 lg:w-3/5 h-auto rounded-[10px]"
             alt="Additional ideation exercises"
           />
         </div>
-        <div className="flex flex-col justify-start gap-4 sm:gap-5 w-full">
-          <p className="text-[#FFF] font-outfit text-base sm:text-xl lg:text-[39.81px] font-medium leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
+
+        {/* PROCESS STEP 5 */}
+        <div className="flex flex-col gap-3 w-full">
+          <h3 className="text-[#FFFAF0] text-base sm:text-lg font-[400]">
             Structured the app with a site map and user flows
-          </p>
-          <div className="flex flex-col items-start gap-2.5 w-full">
+          </h3>
+          <div className="flex flex-col gap-3 w-full">
             <img
               src={casestudy8}
-              className="w-full h-auto max-w-none"
+              className="w-full sm:w-4/5 lg:w-3/5 h-auto rounded-[10px]"
               alt="Site map"
             />
             <img
               src={casestudy9}
-              className="w-full h-auto max-w-none"
+              className="w-full sm:w-4/5 lg:w-3/5 h-auto rounded-[10px]"
               alt="User flows"
             />
           </div>
         </div>
-        <div className="flex flex-col justify-start gap-4 sm:gap-5 w-full">
-          <p className="text-[#FFF] font-outfit text-base sm:text-xl lg:text-[39.81px] font-medium leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
+
+        {/* PROCESS STEP 6 */}
+        <div className="flex flex-col gap-3 w-full">
+          <h3 className="text-[#FFFAF0] text-base sm:text-lg font-[400]">
             Designed sketches, wireframes, and style guide
-          </p>
+          </h3>
           <img
             src={casestudy10}
-            className="w-full h-auto max-w-none"
+            className="w-full sm:w-4/5 lg:w-3/5 h-auto rounded-[10px]"
             alt="Sketches and wireframes"
           />
         </div>
-        <div className="flex flex-col justify-start gap-4 sm:gap-5 w-full">
-          <p className="text-[#FFF] font-outfit text-base sm:text-xl lg:text-[39.81px] font-medium leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
+
+        {/* PROCESS STEP 7 */}
+        <div className="flex flex-col gap-3 w-full">
+          <h3 className="text-[#FFFAF0] text-base sm:text-lg font-[400]">
             Built high-fidelity designs with scalable components in Figma
-          </p>
-          <div className="flex flex-col items-start gap-4 sm:gap-6 lg:gap-[50px] w-full">
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
             <img
               src={casestudy11}
-              className="w-full h-auto max-w-none"
+              className="w-full h-auto rounded-[10px]"
               alt="High-fidelity design 1"
             />
             <img
               src={casestudy12}
-              className="w-full h-auto max-w-none"
+              className="w-full h-auto rounded-[10px]"
               alt="High-fidelity design 2"
             />
             <img
               src={casestudy13}
-              className="w-full h-auto max-w-none"
+              className="w-full h-auto rounded-[10px]"
               alt="High-fidelity design 3"
             />
             <img
               src={casestudy14}
-              className="w-full h-auto max-w-none"
+              className="w-full h-auto rounded-[10px]"
               alt="High-fidelity design 4"
             />
           </div>
-          <div className="flex flex-col justify-center items-center w-full">
-            <button className="cursor-pointer text-nowrap flex py-2 sm:py-3 px-4 sm:px-5 justify-center items-center gap-2.5 rounded-lg bg-[#FFFAF0] shadow-[02px20px0rgba(0,0,0,0.25)] w-fit overflow-hidden hover:opacity-90 transition-opacity">
-              <p className="text-[#3A342F] font-outfit text-xs sm:text-sm lg:text-[19.2px] font-medium leading-tight sm:leading-normal lg:leading-[1.2em]">
-                Prototype Here
-              </p>
+          <div className="flex justify-center pt-4">
+            <button className="bg-primary text-sm text-background font-sans font-semibold py-3 px-6 rounded-md hover:bg-background hover:border-2 hover:border-primary hover:text-primary focus:outline-2 focus:outline-offset-2 focus:outline-primary-500 active:bg-primary-700">
+              Prototype Here
             </button>
           </div>
         </div>
-        <div className="flex flex-col justify-start gap-4 sm:gap-5 w-full">
-          <p className="text-[#FFF] font-outfit text-base sm:text-xl lg:text-[39.81px] font-medium leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
+
+        {/* PROCESS STEP 8 */}
+        <div className="flex flex-col gap-3 w-full">
+          <h3 className="text-[#FFFAF0] text-base sm:text-lg font-[400]">
             Prototyped the full experience for presentation
-          </p>
+          </h3>
           <img
             src={casestudy15}
-            className="w-full h-auto max-w-none"
+            className="w-full sm:w-4/5 lg:w-3/5 h-auto rounded-[10px]"
             alt="Full prototype presentation"
           />
         </div>
-      </div>
-      <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-[35px] w-full">
-        <div className="flex flex-col lg:flex-row lg:justify-end items-start lg:items-center gap-4 sm:gap-6 lg:gap-[30px] w-full">
-          <div className="flex flex-col justify-start lg:justify-center items-start lg:items-end w-full">
-            <p className="text-[#FFF] font-outfit text-lg sm:text-3xl lg:text-[47.78px] font-light leading-tight sm:leading-snug lg:leading-[1.2em] w-full">
-              The Solution
-            </p>
-            <p className="text-[#FFF] font-outfit text-sm sm:text-base lg:text-[27.65px] font-normal leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
-              Gym Leveling integrates three core ideas: RPG-inspired progression
-              — users earn XP, achievements, and level up. Personalized
-              challenges — keeping both beginners and advanced users engaged.
-              Community-driven features — leaderboards, group challenges, and
-              accountability. The final prototype showcased a cohesive and
-              engaging app that bridges fitness with gaming culture.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-[35px] w-full">
-        <div className="flex flex-col lg:flex-row lg:justify-end items-start lg:items-center gap-4 sm:gap-6 lg:gap-[30px] w-full">
-          <div className="flex flex-col justify-start lg:justify-center items-start lg:items-end w-full">
-            <p className="text-[#FFF] font-outfit text-lg sm:text-3xl lg:text-[47.78px] font-light leading-tight sm:leading-snug lg:leading-[1.2em] w-full">
-              Outcome &amp; Learning
-            </p>
-            <p className="text-[#FFF] font-outfit text-sm sm:text-base lg:text-[27.65px] font-normal leading-relaxed sm:leading-normal lg:leading-[1.2em] w-full">
-              This project strengthened my ability to: Design an app from the
-              ground up, not just as a redesign. Build scalable Figma components
-              for a complete product system. Apply gamification principles to
-              enhance user motivation and engagement.
-            </p>
-          </div>
-        </div>
-        <img
-          src={casestudy1}
-          className="w-full h-auto max-w-none"
-          alt="Outcome and learning showcase"
-        />
-      </div>
-      <div className="flex flex-col justify-center items-center gap-6 sm:gap-8 lg:gap-10 w-full">
-        <button className="cursor-pointer text-nowrap flex py-2 sm:py-3 px-4 sm:px-5 justify-center items-center gap-2.5 rounded-lg bg-[#52C3C4] shadow-[02px20px0rgba(0,0,0,0.25)] w-fit overflow-hidden hover:opacity-90 transition-opacity">
-          <p className="text-[#3A342F] font-outfit text-xs sm:text-sm lg:text-[19.2px] font-medium leading-tight sm:leading-normal lg:leading-[1.2em]">
-            Want To Work With Me
+      </section>
+      {/* SECTION 4 - THE SOLUTION */}
+      <section className="flex flex-col lg:flex-row items-start px-4 sm:px-8 lg:px-0 py-12 sm:py-20 lg:py-24 gap-12 sm:gap-16 lg:gap-20 w-full">
+        <div className="flex flex-col gap-4 w-full">
+          <h2 className="text-[#FFFAF0] text-2xl sm:text-3xl lg:text-lgg pb-5 font-[400] leading-tight">
+            The Solution
+          </h2>
+          <p className="text-[#FFFAF0] text-sm sm:text-base lg:text-base font-[100] leading-snug sm:leading-normal lg:leading-relaxed">
+            Gym Leveling integrates three core ideas: RPG-inspired progression where users earn XP, achievements, and level up. Personalized challenges keeping both beginners and advanced users engaged. Community-driven features including leaderboards, group challenges, and accountability. The final prototype showcased a cohesive and engaging app that bridges fitness with gaming culture.
           </p>
-        </button>
-      </div>
-    </div>
+        </div>
+
+        <div className="flex flex-col gap-4 w-full">
+          <h2 className="text-[#FFFAF0] text-2xl sm:text-3xl lg:text-lgg pb-5 font-[400] leading-tight">
+            Outcome &amp; Learning
+          </h2>
+          <p className="text-[#FFFAF0] text-sm sm:text-base lg:text-base font-[100] leading-snug sm:leading-normal lg:leading-relaxed">
+            This project strengthened my ability to: design an app from the ground up, not just as a redesign. Build scalable Figma components for a complete product system. Apply gamification principles to enhance user motivation and engagement.
+          </p>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="flex justify-center items-center">
+        <Link to="/contact">
+          <button className="bg-primary text-sm text-background font-sans font-semibold py-3 px-6 rounded-md hover:bg-background hover:border-2 hover:border-primary hover:text-primary focus:outline-2 focus:outline-offset-2 focus:outline-primary-500 active:bg-primary-700">
+            Want To Work With Me
+          </button>
+        </Link>
+      </section>
+    </>
   );
 }

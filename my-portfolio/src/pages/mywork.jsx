@@ -1,7 +1,7 @@
 import { Title, Meta } from "react-head";
 import { Link } from "react-router-dom";
-import Work1 from "../images/home/my-work-1.webp";
-import Work2 from "../images/home/my-work-2.webp";
+import hero1 from "../images/Case Study Page/Case Study 1/caseStudy1.webp";
+import hero2 from "../images/Case Study Page/Case Study 2/caseStudy2.webp";
 
 export default function MyWork() {
   const caseStudies = [
@@ -9,7 +9,7 @@ export default function MyWork() {
       id: 1,
       title: "Gym Leveling",
       subtitle: "Gamifying Fitness Tracking",
-      image: Work1,
+      image: hero1,
       description: "A gamified fitness app concept that transforms workouts into an RPG-style experience. Users track progress, earn XP, and level up their fitness journey.",
       path: "/casestudy1",
       type: "Original App Concept"
@@ -18,8 +18,8 @@ export default function MyWork() {
       id: 2,
       title: "Canada Computers",
       subtitle: "Canada Computers Redesign",
-      image: Work2,
-      description: "The existing app felt outdated and inconsistent, making product browsing and navigation frustrating. My goal was to improve usability, align visuals with modern standards, and create a scalable design system.",
+      image: hero2,
+      description: "The existing app felt outdated and inconsistent, making product browsing and navigation frustrating. My goal was to improve usability, align visuals with modern standards, and create a scalable design.",
       path: "/casestudy2",
       type: "UX/UI Redesign"
     }
@@ -44,12 +44,10 @@ export default function MyWork() {
       <Meta name="twitter:image" content="" />
       
       <div className="px-4 sm:px-8 lg:pl-[130px] lg:pr-[130px] pt-[6.75rem] pb-20">
-        <main aria-label="My work portfolio">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light text-[#FFFAF0] mb-12 lg:mb-20">My Work</h1>
-          
+        <main aria-label="My work portfolio">          
           {/* Case Studies Section */}
           <section aria-label="Case studies" className="mb-20 lg:mb-32">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-[#FFFAF0] mb-8 lg:mb-12">Case Studies</h2>
+            <h1 className="text-[#FFFAF0] text-2xl sm:text-3xl lg:text-lgg pb-5 font-[400] leading-tight">Case Studies</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
               {caseStudies.map((study) => (
                 <Link key={study.id} to={study.path} className="group">
@@ -61,9 +59,9 @@ export default function MyWork() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <div className="flex flex-col gap-3 p-6 sm:p-8 bg-[#080706]">
+                    <div className="flex flex-col h-[400px] md:h-[500px] lg:h-[350px] gap-3 p-6 sm:p-8 bg-[#080706]">
                       <p className="text-xs sm:text-sm text-[#52C3C4] font-semibold uppercase tracking-wide">{study.type}</p>
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#FFFAF0]">{study.title}</h3>
+                      <h3 className="text-lg sm:text-md lg:text-2xl font-semibold text-[#FFFAF0]">{study.title}</h3>
                       <p className="text-sm text-[#FFFAF0] opacity-80">{study.subtitle}</p>
                       <p className="text-sm text-[#FFFAF0] font-[100] leading-relaxed">{study.description}</p>
                       <div className="mt-auto pt-4">
@@ -78,7 +76,7 @@ export default function MyWork() {
 
           {/* Coming Soon Section */}
           <section aria-label="Coming soon projects" className="mt-20 lg:mt-32">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-[#FFFAF0] mb-8 lg:mb-12">Upcoming Projects</h2>
+            <h2 className="text-[#FFFAF0] text-2xl sm:text-3xl lg:text-lgg pb-5 font-[400] leading-tight">Projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
               {[1, 2, 3].map((item) => (
                 <div key={item} className="group flex flex-col h-full overflow-hidden rounded-[15px] shadow-[0_4px_50px_0_rgba(0,0,0,0.25)] hover:shadow-[0_4px_75px_0_rgba(82,195,196,0.3)] transition-shadow duration-300">
