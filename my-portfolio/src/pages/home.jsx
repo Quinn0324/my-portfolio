@@ -4,6 +4,7 @@ import { Title, Meta } from "react-head";
 import Middle from "../images/home/&.svg";
 import HomeCarousel from "../components/carousel.jsx";
 import BackgroundImage from "../images/home/aboutme-bg.webp";
+import Logo from "../logo-files/primary.svg";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -44,7 +45,7 @@ export default function Home() {
       <Meta property="og:type" content="website" />
       <Meta property="og:title" content="Preston Quinn — UX/UI Designer | Minimal Intuitive Digital Experiences" />
       <Meta property="og:description" content="Explore Preston Quinn's portfolio of UX/UI design projects focusing on minimal, intuitive, and user-centered digital experiences." />
-      <Meta property="og:image" content="" />
+      <Meta property="og:image" content={Logo} />
       <Meta property="og:url" content="" />
       {/* Twitter Card */}
       <Meta name="twitter:card" content="summary_large_image" />

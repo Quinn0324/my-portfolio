@@ -34,7 +34,7 @@ function sendEmail(e) {
       <Meta property="og:type" content="website" />
       <Meta property="og:title" content="Contact Preston Quinn" />
       <Meta property="og:description" content="Get in touch to discuss your design project and collaboration opportunities." />
-      <Meta property="og:image" content="" />
+      <Meta property="og:image" content="{Image}" />
       {/* Twitter Card */}
       <Meta name="twitter:card" content="summary" />
       <Meta name="twitter:title" content="Contact Preston Quinn" />

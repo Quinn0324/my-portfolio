@@ -34,7 +34,7 @@ useEffect(() => {
       <Meta property="og:type" content="profile" />
       <Meta property="og:title" content="About Preston Quinn — Designer, Problem-Solver, & Adventurer" />
       <Meta property="og:description" content="Discover Preston Quinn's design philosophy, experience, and personal passions." />
-      <Meta property="og:image" content="" />
+      <Meta property="og:image" content="{The Person}" />
       {/* Twitter Card */}
       <Meta name="twitter:card" content="summary" />
       <Meta name="twitter:title" content="About Preston Quinn" />

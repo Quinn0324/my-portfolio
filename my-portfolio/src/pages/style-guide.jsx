@@ -1,10 +1,25 @@
 import Button from "../components/button-primary";
 import Button1 from "../components/button-secondary";
 import Phone1 from "../components/phone1.jsx";
+import { Title, Meta } from "react-head";
 
 
 export default function Style_Guide() {
   return (
+    <>
+      <Title>Style Guide | Preston Quinn</Title>
+      <Meta name="description" content="Preston Quinn's design system and style guide showcasing colors, typography, and UI components used throughout the portfolio." />
+      <Meta name="keywords" content="style guide, design system, UI components, design tokens, Preston Quinn" />
+      <Meta name="author" content="Preston Quinn" />
+      {/* Open Graph */}
+      <Meta property="og:type" content="website" />
+      <Meta property="og:title" content="Style Guide — Preston Quinn's Design System" />
+      <Meta property="og:description" content="Explore Preston Quinn's design system and component library." />
+      {/* Twitter Card */}
+      <Meta name="twitter:card" content="summary" />
+      <Meta name="twitter:title" content="Style Guide" />
+      <Meta name="twitter:description" content="Preston Quinn's design system documentation." />
+      
     <div className="pt-2 pl-[130px] pr-[130px] pt-[6.75rem]">
 
       <h1 className="text-xl font-thin font-heading mb-20 mt-10">Style Guide</h1>
@@ -39,5 +54,6 @@ export default function Style_Guide() {
 
       
     </div>
+    </>
   );
 }
